@@ -1,0 +1,49 @@
+.header{
+    background-color: rgb(20, 20, 20);
+    height: 61px;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.logotype{
+    cursor: pointer;
+}
+.list-nav{
+    display: flex;
+    li{
+        padding: 10px;
+    }
+}
+.header__container__first-box{
+    display: flex;
+}
+.header__container__second-box{
+    display: flex;
+    align-items: center;
+}
+.user__details{
+    img{
+        cursor: pointer;
+        margin: 5px;
+        width: 20;
+    }
+}
+.input{
+    background: rgba(92, 92, 92, 0.34);
+    border-radius: 8px;
+    padding: 7px;
+    input{
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        width: 220px;
+    }
+    img{
+        width: 20;
+        cursor: pointer;
+    }
+}

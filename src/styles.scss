@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Quarion';
+    src: url(./assets/fonts/Quartion/Quarion-SemiBold.woff2);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter/Inter-Regular.woff2);
+}
+:root{
+    --background:#131212;
+}
+*{
+    box-sizing: border-box;
+    font-family:'Inter' ;
+}
+html{
+    height:100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Quarion' ;
+}
+body{    
+    margin:0px;
+    background: var(--background);
+    color: white;
+    margin: 0;
+    height:100%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1110px;
+    margin: auto;
+}
+.standart-btn{
+    background: #F1433A;
+    box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25);
+    border-radius: 15px;
+    color:white;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    transition: 0.1s ease;
+    // border: 1px ;
+    &:hover{
+        background: #FC4339;
+    }
+    &:active{
+        background: #F1433A;
+        box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25), inset 0px 4px 26px rgba(79, 8, 8, 0.61);
+    }
+}
+.standart__buy-btn{
+    background: #F1433A;
+    box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25);
+    border-radius: 15px;
+    color:white;
+    font-weight: 700;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    &:hover{
+        background: #FC4339;
+    }
+    &:active{
+        background: #F1433A;
+        box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25), inset 0px 4px 26px rgba(79, 8, 8, 0.61);
+    }
+}

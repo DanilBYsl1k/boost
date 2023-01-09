@@ -1,0 +1,12 @@
+
+.page{
+    background-image:url(../assets/image/basic_img/main-bgc_first.png) ;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+}
