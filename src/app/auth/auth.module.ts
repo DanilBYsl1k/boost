@@ -16,6 +16,7 @@ const router:Routes=[
   ],
   imports: [
     CommonModule,
+
     RouterModule.forChild(router)
   ]
 })

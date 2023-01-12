@@ -7,20 +7,20 @@ const cardListShema= new Schema({
         type:String,
         require:true
     },
-    // price:{
-    //     type:Number,
-    //     require:true
-    // },
-    // params:[String],
-    // img:{
-    //     type:String,
-    //     require:true
-    // },
-    // paragraph:{
-    //     color:String,
-    //     title:String
-    // },
-    // timeSale:Number
+    price:{
+        type:Number,
+        require:true
+    },
+    params:[String],
+    img:{
+        type:String,
+        require:true
+    },
+    paragraph:{
+        color:String,
+        title:String
+    },
+    timeSale:Number
 })
 
 const cardList=mongoose.model('cardList', cardListShema)

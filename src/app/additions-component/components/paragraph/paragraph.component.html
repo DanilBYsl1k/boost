@@ -1,0 +1,14 @@
+<section class="paragraphs">
+    <div class="container paragraphs__container">
+        <ul class="paragraphs__container-list">
+            <li  
+                class="paragraph" 
+                *ngFor="let paragraph of $paragraph|async"
+                [routerLink]="[paragraph]"
+                routerLinkActive="active-paragraph"
+                >
+                {{paragraph}}
+            </li>
+        </ul>
+    </div>
+</section>

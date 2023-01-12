@@ -9,12 +9,11 @@ const getCardList=(req, res)=>{
     cardList
         .find()
         .then((cardList)=>{
-            console.log(cardList)
             res
                 .status(200)
                 .json(cardList)
         })
-        .catch((err)=> handlErrors(res,req))
+        .catch((err)=> handlErrors(req, res))
 }
 
 module.exports={
