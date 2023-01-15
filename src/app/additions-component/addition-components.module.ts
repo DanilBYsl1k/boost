@@ -2,20 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { CardsListComponent } from './components/cards-list/cards-list.component';
 import { HttpClientModule } from '@angular/common/http'
+import { RouterModule } from '@angular/router';
+
 import { reducers } from './store/reducer';
 import { cardsEffect } from './store/effects/cards.effect';
 import { ParagraphComponent } from './components/paragraph/paragraph.component';
 import { paragraphEffect } from './store/effects/paragraphEffect';
-import { RouterModule } from '@angular/router';
+import { CardsListComponent } from './components/cards-list/cards-list.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 
 
 @NgModule({
   declarations: [
     CardsListComponent,
-    ParagraphComponent
+    ParagraphComponent,
+    ReviewsComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,105 @@
+.card-list{
+    margin-top:20px;
+}
+.card-list__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    gap:20px;
+    row-gap: 5px;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    margin-bottom:20px ;
+    position: relative;
+    border-radius: 15px;
+    z-index: 3;
+    transition: 1s ease;
+}
+.img-bgc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+.card__info{
+    padding:  20px;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    &:hover{
+        background-color: #ff000025;
+    }
+}
+.paragraph{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h6{
+        margin: 0;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        width: 144px;
+        text-align: center;
+    }
+}
+.time-Sale{
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 5px;
+    }
+    p{
+        font-weight: 1000;
+    }
+}
+.params-card{
+    h3{
+        text-transform: uppercase;
+        width: 238px;
+    }
+    a{
+        font-family: 'Quarion';
+        font-size: 22px;
+        font-weight: 1000;
+    }
+}
+.list-params__card{
+    list-style: inside;
+    padding-left: 5px;
+    li{
+        color:  #52C5A9;
+        font-weight: 500;
+        margin: 2px 0;
+        line-height: 135.7%;
+    }
+}
+.price__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    p{
+        margin: 0;
+    }
+}
+.price-title{
+    color: #6C6C6C;
+    font-weight: 400;
+}
+.price-title-secondary{
+    font-weight: 1000;
+    font-size: 25px;
+}

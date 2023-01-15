@@ -3,7 +3,8 @@ import { Icard } from "../../types/card.interface";
 import { ActionTypes } from "../actionTypes";
 
 export const additionActionCards=createAction(
-    ActionTypes.CARDS
+    ActionTypes.CARDS,
+    props<{request:string}>()
 )
 export const additionActionCardsSuccess=createAction(
     ActionTypes.CARDS_SUCCESS,

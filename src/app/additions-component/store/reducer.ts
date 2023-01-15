@@ -7,7 +7,8 @@ import { additionActionParagrph, additionActionParagrphFailure, additionActionPa
 const initialState:AdditionInitialState={
     cards: [],
     errors: null,
-    paragraph: []
+    paragraph: [],
+    cardsLenght: 0
 }
 const connectReducer=createReducer(
     initialState,
@@ -15,12 +16,14 @@ const connectReducer=createReducer(
     on(
         additionActionCards,(state):AdditionInitialState=>({
             ...state,
+            cards:[]
         })
     ),
     on(
         additionActionCardsSuccess,(state,action):AdditionInitialState=>({
             ...state,
-            cards:action.answer
+            cards:action.answer,
+            cardsLenght:action.answer.length
         })
     ),
     on(

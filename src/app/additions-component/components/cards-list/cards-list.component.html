@@ -1,1 +1,32 @@
-<p>cards-list works!</p>
+<section class="card-list">
+    <div class="container card-list__container">
+        <ul class="card-list__box">
+            <ng-container *ngFor="let card of cards|async let i=index;">
+                <li class="card"  *ngIf="i<$quantity">
+                    <img class="img-bgc" src="{{card.img}}" alt="">
+                    <div class="card__info">
+                        <div class="paragraph">
+                            <div class="time-Sale">
+                                <img src="assets/image/card-list/Clock.svg" alt="clock">
+                                <p>{{card.timeSale}} hours</p>
+                            </div>
+                            <h6 [style.background-color]="card.paragraph.color" >{{card.paragraph.title}}</h6>
+                        </div>
+                        <div class="params-card">
+                            <h3><a [routerLink]="['/',card.paragraph.title,'card',card.title]">{{card.title}}</a></h3>
+                            <ul class="list-params__card">
+                                <li *ngFor="let params of card.params">{{params}}</li>
+                            </ul>
+                                <div class="price__box">
+                                    <div class="price_text">
+                                        <p class="price-title">Price</p><p class="price-title-secondary">€ {{card.prcice}}</p>
+                                    </div>
+                                    <button class="standart__buy-btn">Buy now</button>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+            </ng-container>
+        </ul>
+    </div>
+</section>

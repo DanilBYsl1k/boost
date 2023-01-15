@@ -3,14 +3,42 @@ h1{
     font-size: 48px;
     max-width: 598px;
 }
-p{
+.title-site{
     font-size: 16px;
-    width: 350px;
+    max-width: 350px;
     line-height: 127.2%;
     font-weight: 500;
     font-style: normal;
 }
 .big-width_text{
     font-weight: 1000;
-
+}
+.main-title{
+    margin-bottom: 30px;
+}
+.popular{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    h2{
+        font-weight: 700;
+        font-size: 32px;
+    }
+    img{
+        margin: 5px;
+    }
+}
+@media (max-width:650px) {
+    h1{
+        font-size: 30px;
+    }
+}
+@media (max-width:650px) {
+    h1{
+        font-size: 25px;
+        max-width: 350px;
+    }
+    // .title-site{
+    //     width: 100%;
+    // }
 }

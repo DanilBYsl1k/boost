@@ -5,4 +5,5 @@ export interface AdditionInitialState{
     cards:Icard[]
     errors:Error|null
     paragraph:Iparagraph
+    cardsLenght:number
 }

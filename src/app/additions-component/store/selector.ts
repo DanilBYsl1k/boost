@@ -16,3 +16,7 @@ export const paragraphSelector=createSelector(
     FeatureSelector,
     (state)=>state.paragraph
 )
+export const cardsLenghtSelector=createSelector(
+    FeatureSelector,
+    (state)=>state.cardsLenght
+)

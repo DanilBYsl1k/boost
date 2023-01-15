@@ -1,10 +1,15 @@
-<section>
+<section class="main-title">
     <div class="container container-title">
         <h1>NICE AND FRIENDLY WORLD OF WARCRAFT BOOSTING SERVICE</h1>
-        <p class="title-cite"><span class="big-width_text">Join nice-boost</span>, upgrade your account and enjoy the game with us.<br>
+        <p class="title-site"><span class="big-width_text">Join nice-boost</span>, upgrade your account and enjoy the game with us.<br>
             Simple, fast and safe</p>
         <button class="standart-btn">Get services now</button>
     </div>
 </section>
-<app-paragraph></app-paragraph>
-<app-cards-list></app-cards-list>
+<section class="cards-component">
+    <app-paragraph></app-paragraph>
+    <div class="popular container">
+        <img src="assets/image/basic_img/flame.svg" alt=""><h2>Most popular services</h2>
+    </div>
+    <app-cards-list [$quantity]="6"></app-cards-list>
+</section>

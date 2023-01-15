@@ -13,12 +13,21 @@ export class cardsEffect{
     constructor(private actions$: Actions, private cardsService:GetCardsService){ }
     $cards=createEffect(()=>this.actions$.pipe(
         ofType(additionActionCards),
-        switchMap(()=>{
-            return this.cardsService.getCards().pipe(
-                map((card:Icard[]) => {
-                    return additionActionCardsSuccess({ answer: card });
-                })
-            );
+        switchMap((request)=>{
+            if(request.request=='all' ){
+                console.log(request.request)
+                return this.cardsService.getCards().pipe(
+                    map((card:Icard[]) => {
+                        return additionActionCardsSuccess({ answer: card });
+                    })
+                );
+            }else{
+                return this.cardsService.getCardParagraph(request.request).pipe(
+                    map((card:Icard[]) => {
+                        return additionActionCardsSuccess({ answer: card });
+                    })
+                );
+            }
         }),
         catchError((errorRespone:HttpErrorResponse)=>{
             return of(

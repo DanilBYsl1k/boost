@@ -6,6 +6,7 @@
                 *ngFor="let paragraph of $paragraph|async"
                 [routerLink]="[paragraph]"
                 routerLinkActive="active-paragraph"
+                (click)="getCardsParagraph(paragraph)"
                 >
                 {{paragraph}}
             </li>

@@ -11,4 +11,10 @@ export class GetCardsService {
   getCards(){
     return this.http.get<Icard[]>('http://localhost:3000/cards')
   }
+  getCard(id:string|number){
+    return this.http.get<Icard>(`http://localhost:3000/card/${id}`)
+  }
+  getCardParagraph(paragrahg:string){
+    return this.http.get<Icard[]>(`http://localhost:3000/cards/${paragrahg}`)
+  }
 }

@@ -7,14 +7,14 @@ const paragraphRouter=require('./backend/routes/paragraph-router')
 
 const PORT=3000
 const app = express();
-const URL='mongodb://0.0.0.0:27017/card'
-// const URL='mongodb+srv://admin:byslik12@cluster0.bbj3vvh.mongodb.net/card?retryWrites=true&w=majority'
+// const URL='mongodb://0.0.0.0:27017/card'
+const URL='mongodb+srv://admin:Byblik12@cluster0.qq7nash.mongodb.net/card?retryWrites=true&w=majority'
 
 
 // 
 app.use((req, res, next) => {
     res.append('Access-Control-Allow-Origin', ['*']);
-    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.append('Access-Control-Allow-Methods', 'GET,PUT,PATCH,POST,DELETE');
     res.append('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
